@@ -29,7 +29,7 @@ public class BinaryNode {
 
   public ArrayList<Integer> addValuesToArrayList(ArrayList<Integer> vals) {
 
-    // first add lower values if exist
+    // first add left children if exist
     if (this.left != null) {
       vals = this.left.addValuesToArrayList(vals);
     }

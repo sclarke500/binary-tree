@@ -28,5 +28,21 @@ public class BinaryTree {
 
   }
 
+  public Integer indexOf(int val) {
+
+    // returns index of value if in list, else returns -1
+
+    ArrayList<Integer> vals = this.values();
+
+    for (int counter = 0; counter < vals.size(); counter++) { 		      
+      if (vals.get(counter) == val) {
+        return counter;
+      }
+    }
+
+    return -1;
+
+  }
+
 
 }

@@ -20,6 +20,11 @@ class MyApp {
       System.out.println(values.get(counter)); 		
     }
 
+    System.out.println("--------------");
+
+    System.out.println(bt.indexOf(7));
+
+
   }
 
 }
