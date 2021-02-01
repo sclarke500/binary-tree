@@ -54,6 +54,18 @@ public class BinaryTree {
 
   }
 
+  public void delete(int val) {
+
+    BinaryNode n = this.search(val);
+
+    if (n != null) {
+      if (n.parent != null) {
+        // what to do here...
+      }
+    }
+
+  }
+
 
 
 }

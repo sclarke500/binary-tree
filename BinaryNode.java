@@ -6,21 +6,27 @@ public class BinaryNode {
 
   public BinaryNode left;
   public BinaryNode right;
+  public BinaryNode parent;
 
   public BinaryNode(int value) {
     this.value = value;
   }
 
+  public BinaryNode(int value, BinaryNode parent) {
+    this.value = value;
+    this.parent = parent;
+  }
+
   public void insertValue(int value) {
     if (value <= this.value) {
       if (this.left == null) {
-        this.left = new BinaryNode(value);
+        this.left = new BinaryNode(value, this);
       } else {
         this.left.insertValue(value);
       }
     } else {
       if (this.right == null) {
-        this.right = new BinaryNode(value);
+        this.right = new BinaryNode(value, this);
       } else {
         this.right.insertValue(value);
       }
