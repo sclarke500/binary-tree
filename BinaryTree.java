@@ -44,5 +44,16 @@ public class BinaryTree {
 
   }
 
+  public BinaryNode search(int val) {
+
+    if (this.root == null) {
+      return null;
+    }
+
+    return this.root.search(val);
+
+  }
+
+
 
 }

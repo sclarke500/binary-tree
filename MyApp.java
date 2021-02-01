@@ -24,6 +24,16 @@ class MyApp {
 
     System.out.println(bt.indexOf(7));
 
+    int v = 3;
+
+    BinaryNode searchResult = bt.search(v);
+    if (searchResult != null) {
+      System.out.println("found " + searchResult.value);
+    } else {
+      System.out.println(v + " not found");
+    }
+
+
 
   }
 

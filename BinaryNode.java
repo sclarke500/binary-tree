@@ -46,5 +46,31 @@ public class BinaryNode {
 
   }
 
+  public BinaryNode search(int val) {
+
+    System.out.println("looking in " + this.value);
+
+    if (val == this.value) {
+      return this;
+    } else if (val <= this.value) {
+      if (this.left != null) {
+        return this.left.search(val);
+      } else {
+        return null;
+      }
+    } else {
+      if (this.right != null) {
+        return this.right.search(val);
+      } else {
+        return null;
+      }
+    }
+
+  }
+
+
+
+
+
 
 }
